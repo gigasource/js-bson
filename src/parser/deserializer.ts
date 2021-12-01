@@ -296,7 +296,7 @@ function deserializeObject(
 
       // We have a raw value
       if (raw) {
-        value = buffer.slice(index, index + objectSize);
+        value = Buffer.from(buffer.slice(index, index + objectSize));
       } else {
         let objectOptions = options;
         if (!globalUTFValidation) {
@@ -413,7 +413,7 @@ function deserializeObject(
         }
 
         if (promoteBuffers && promoteValues) {
-          value = buffer.slice(index, index + binarySize);
+          value = Buffer.from(buffer.slice(index, index + binarySize));
         } else {
           value = new Binary(buffer.slice(index, index + binarySize), subType);
         }
