@@ -1,5 +1,5 @@
 {
-  "name": "bson",
+  "name": "bson-giga",
   "description": "A bson parser for node.js and the browser",
   "keywords": [
     "mongodb",
@@ -12,7 +12,7 @@
     "browser_build",
     "bower.json"
   ],
-  "version": "1.1.6",
+  "version": "1.1.7",
   "author": "Christian Amor Kvalheim <christkv@gmail.com>",
   "contributors": [],
   "repository": "mongodb/js-bson",
